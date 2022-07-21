@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Temp4.css">
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fourth Template</title>
+</head>
+  <body>
+<div class="headnav">
+    <div class="logo">
+    <img src="t4logo.png" alt="">
+</div>
+
+<div class="headright">
+    <div class="sm">
+        <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-pinterest"></a>
+      </div>
+      <div class="but">
+        <button class="download">DOWNLOAD NOW</button>
+      </div>
+   <div class="dropdown">
+    <button class="dropbtn">HTML Templates</button>
+    <div class="dropdown-content">
+    <a href="Template.html">Template 1</a>
+    <a href="Template 2.html">Template 2</a>
+    <a href="Template 3.html">Template 3</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">More HTML Templates</button>
+    <div class="dropdown-content">
+    <a href="Template.html">Template 1</a>
+    <a href="Template 2.html">Template 2</a>
+    <a href="Template 3.html">Template 3</a>
+    </div>
+  </div>
+  
+
+</div>
+  </div>
+<div class="bodyall">
+
+
+
+  <div class="bann">
+  <img src="t41.png" alt="">
+</div>
+<div class="content">
+<div class="cc1">
+    <img src="t411.jpg" alt="">
+     <p>10/05/2018</p>
+      <h2> Night Laser Show</h2>
+  <p>#hiphop #mb #dance</p>
+    <p>
+      We are happy to announce this special laser show. </p><br>
+      <div class="comm" style="text-align: center;">
+       <button type="button" name="button" class="down">See More...</button>
+       <div class="overlay"  onclick="showContent()">
+        <div class="text">  We are happy to announce this special laser show. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, adipisci.</div>
+      </div>  
+        </div>
+</div>
+<div class="cc2"> 
+    <img src="t412.jpg" alt="">
+    
+      <p class="blueline" style="float:left">14/05/2018</p>
+      <h2> Live Music</h2>
+      <p>#live #rock #alternative</p>
+    <p>Special event for our rock fans! Live Music show. </p><br>
+      <div class="comm" style="text-align: center;">
+        <button type="button" name="button" class="down">See More...</button>
+        <div class="overlay"  onclick="showContent()">
+          <div class="text">Special event for our rock fans! Live Music show. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, adipisci.</div>
+        </div> 
+        </div>
+</div>
+<div class="cc3" >
+    <img src="t413.jpg" alt="">
+    
+      <p class="blueline" style="float:left">10/04/2018</p>
+      <h2>DJ - Master Class</h2>
+      <p>#dj #master-class</p>
+    <p>DJ WoodSmell will teach you new tricks: please sign up. </p><br>
+      <div class="comm" style="text-align: center;">
+       <button type="button" name="button" class="down">See More...</button>
+       <div class="overlay"  onclick="showContent()">
+        <div class="text">DJ WoodSmell will teach you new tricks: please sign up. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, adipisci.</div>
+      </div> 
+        </div>
+</div>
+<div class="cc4" >
+    <img src="t414.jpg" alt="">
+    
+      <p class="blueline" style="float:left">10/04/2018</p>
+      <h2> Best Night Party</h2>
+      <p>#party #club</p>
+    <p> Our traditional event: best hits all night long.</p><br>
+      <div class="comm" style="text-align: center;">
+        <button type="button" name="button" class="down">See More...</button>
+        <div class="overlay"  onclick="showContent()">
+          <div class="text">Our traditional event: best hits all night long. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, adipisci.</div>
+        </div> 
+      </div>
+</div>
+</div>
+</div>
+
+
+
+<template id="temp" style="text-align: center;">
+ 
+  <!-- <img src="t411.jpg" width="100%"> -->
+  <div class="formdiv">
+    <div class="edit">
+    <form action="" method="post">
+      <div> <button onclick="closes()" style="position: relative; float: right;"><i class="fa fa-close" style="font-size: 40px; position: relative; float: right;" id="close" ></i></button>
+      <h1 class="book">Book your tickets</h1>
+ 
+     <script>
+       function closes(){
+     window.location.reload();
+       }
+     </script>
+  </div>
+      <div class="elem-group">
+        <input type="text" id="name" name="visitor_name" placeholder="Enter Your Name" required>
+        <!-- <input type="text" id="name" name="visitor_name" placeholder="Enter Your Name" pattern=[A-Z\sa-z]{3,20} required> -->
+      </div>
+      <div class="elem-group">
+        
+        <input type="email" id="email" name="visitor_email" placeholder="example@email.com" required>
+      </div>
+      <div class="elem-group">
+       
+        <input type="number" id="phone" name="visitor_phone" placeholder="10-digit-phone-number"  required>
+      </div>
+      <hr>
+      <div class="elem-group inlined">
+       
+        <input type="number" id="adult" name="total_adults" placeholder="No. of Adults (Only 18+ allowed)" min="1" required>
+      </div>
+      
+   
+      <div class="elem-group">
+        
+        <select id="room-selection" name="room_preference" required>
+            <option value="">Choose the show you wanna book</option>
+            <option value="Night Laser Show">Night Laser Show</option>
+            <option value="Live Show">Live Show</option>
+            <option value="DJ - Master Class">DJ - Master Class</option>
+            <option value="Night Party">Night Party</option>
+        </select>
+      </div>
+      <hr>
+      <script>
+        
+      </script>
+     <button type="button" onclick="bookt()">Book The Rooms</button>
+      <script>function bookt()
+        { 
+          fnn();
+          window.location.replace("testing.html");
+        }</script>
+    </form>
+  </div>
+  </div>
+</template>
+
+<script>
+  function showContent() {
+  var temp = document.getElementById("temp");
+  var clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+function fnn(){
+      
+var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var phone = document.getElementById("phone").value;
+    var show = document.getElementById("room-selection").value;
+    var count = document.getElementById("adult").value;
+  
+    localStorage.setItem("name", name);
+    localStorage.setItem("email", email);
+    localStorage.setItem("phone", phone);
+    localStorage.setItem("show", show);
+    localStorage.setItem("count", count);
+}
+  
+  
+</script>
+
+
+  </body>
+</html>
